@@ -13,10 +13,10 @@ export default defineConfig({
       formats: ["es"],
     },
     rollupOptions: {
-      external: ["react", "react/jsx-runtime", "@plasmicapp/host"],
+      external: ["react", "react/jsx-runtime", "react-dom", "@plasmicapp/host", "@plasmicapp/query", "@supabase/ssr", "use-deep-compare"],
       output: {
         assetFileNames: "assets/[name][extname]",
-        entryFileNames: "[name].js",
+        entryFileNames: "[namen].js",
       },
     },
   },
